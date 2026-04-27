@@ -8,7 +8,7 @@ class orang
 private:
     string nama;
 public:
-    void setNama(string pNama)
+    void setNama(string pNama);
         friend class siswa; // deklarasi friend class
     
 };
@@ -20,12 +20,12 @@ private:
 
 public:
     void setId(int pId);
-    void displayAll(orang &a)
+    void displayAll(orang &a);
 };
 
 void siswa::displayAll(orang &a)
 {
-    cout << id << endl << a.nama << endl; 
+    cout << id << endl << a.nama;
 }
 
 void siswa::setNama(string pNama)
