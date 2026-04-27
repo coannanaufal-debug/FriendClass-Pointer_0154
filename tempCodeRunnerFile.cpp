@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 class mahasiswa{
     public:
     int nim;
@@ -8,16 +9,10 @@ class mahasiswa{
     }
 };
 
-int main (){
-    mahasiswa mhs(1); // objek mhs
-    mhs.shownim();
-
-    mahasiswa &refmhs = mhs; // pointer refmhs
-    refmhs.nim = 2; // member accsess operator
-    refmhs.shownim();
-    
-    mahasiswa *pMhs = &mhs; // pointer pMhs
-    pMhs->nim = 3; // operator panah
-    pMhs->shownim();
+int main () {
+    mahasiswa *mhs = new mahasiswa(); // pointer mhs
+    mhs->nim = 2;
+    mhs->shownim();
+    delete mhs; 
     return 0;
 }
