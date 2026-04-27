@@ -32,3 +32,7 @@ void siswa::setNama(string pnama)
 {
     nama = pnama;
 }
+void siswa::setId(int pId)
+{
+    id = pId;
+}  
