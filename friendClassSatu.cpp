@@ -28,9 +28,9 @@ void siswa::displayAll(orang &a)
     cout << id << endl << a.nama << endl; 
 }
 
-void siswa::setNama(string pnama)
+void siswa::setNama(string pNama)
 {
-    nama = pnama;
+    nama = pNama;
 }
 void siswa::setId(int pId)
 {
