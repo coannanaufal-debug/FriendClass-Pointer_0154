@@ -4,12 +4,12 @@ class mahasiswa{
     public:
     int nim;
     void shownim(){
-        cout<< " No Induk: "<<nim<<endl;
+        cout<< " No Induk: "<< nim << endl;
     }
 };
 
 int main (){
-    mahasiswa mhs(1); // objek mhs
+    mahasiswa mhs{1}; // objek mhs
     mhs.shownim();
 
     mahasiswa &refmhs = mhs; // pointer refmhs

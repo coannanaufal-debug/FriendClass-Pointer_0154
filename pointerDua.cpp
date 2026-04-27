@@ -10,7 +10,7 @@ class mahasiswa{
 };
 
 int main () {
-    mahasiswa *mhs = new mahasiswa(1); // pointer mhs
+    mahasiswa *mhs = new mahasiswa{1}; // pointer mhs
     mhs->nim = 2;
     mhs->shownim();
     delete mhs; 
